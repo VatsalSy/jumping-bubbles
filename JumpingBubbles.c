@@ -19,7 +19,7 @@
 // Error tolerances
 #define fErr (1e-3)                                 // error tolerance in VOF
 #define KErr (1e-4)                                 // error tolerance in KAPPA
-#define VelErr (1e-3)                            // error tolerances in velocity
+#define VelErr (1e-4)                            // error tolerances in velocity
 
 #define Mu21 (1.00e-3)
 #define Rho21 (1.00e-3)
@@ -71,8 +71,8 @@ event init(t = 0){
 
     bounding_box (p, &min, &max);
     fprintf(ferr, "xmin %g xmax %g\nymin %g ymax %g\nzmin %g zmax %g\n", min.x, max.x, min.y, max.y, min.z, max.z);
-    fprintf(ferr, "x0 = %g, y0 = %g, z0 = %g\n", 0., - 1 - L0/pow(2,MAXlevel+1), (min.z+max.z)/2.);
-    origin (0., - 1 - L0/pow(2,MAXlevel), (min.z+max.z)/2.);
+    fprintf(ferr, "x0 = %g, y0 = %g, z0 = %g\n", 0., - 1 - 0.025, (min.z+max.z)/2.);
+    origin (0., - 1 - 0.025, (min.z+max.z)/2.);
 
     scalar d[];
     distance (d, p);

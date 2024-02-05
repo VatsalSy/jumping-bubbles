@@ -18,7 +18,7 @@
 // Error tolerances
 #define fErr (1e-3)                                 // error tolerance in VOF
 #define KErr (1e-4)                                 // error tolerance in KAPPA
-#define VelErr (1e-3)                            // error tolerances in velocity
+#define VelErr (1e-4)                            // error tolerances in velocity
 
 #define Mu21 (1.00e-3)
 #define Rho21 (1.00e-3)
