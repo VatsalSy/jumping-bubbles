@@ -71,8 +71,8 @@ event init(t = 0){
 
     bounding_box (p, &min, &max);
     fprintf(ferr, "xmin %g xmax %g\nymin %g ymax %g\nzmin %g zmax %g\n", min.x, max.x, min.y, max.y, min.z, max.z);
-    fprintf(ferr, "x0 = %g, y0 = %g, z0 = %g\n", 0., - 1 - 0.025, (min.z+max.z)/2.);
-    origin (0., - 1 - 0.025, (min.z+max.z)/2.);
+    fprintf(ferr, "x0 = %g, y0 = %g, z0 = %g\n", 0., - 1.0, (min.z+max.z)/2.);
+    origin (0., - 1.0 - 0.025, (min.z+max.z)/2.);
 
     scalar d[];
     distance (d, p);
