@@ -1,5 +1,5 @@
 /**
- * @file JumpingBubbles.c
+ * @file JumpingBubbles-hydrophilic.c
  * @brief Simulation of jumping bubbles sitting on a substrate using Basilisk C. 
  * @author Vatsal
  * @version 1.0
@@ -69,6 +69,8 @@
 // boundary conditions
 u.t[bottom] = dirichlet(0.);
 u.r[bottom] = dirichlet(0.);
+uf.t[bottom] = dirichlet(0.);
+uf.r[bottom] = dirichlet(0.);
 f[bottom] = dirichlet(1.);
 
 double tmax, Oh;
