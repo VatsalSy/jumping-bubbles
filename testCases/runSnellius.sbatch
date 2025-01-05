@@ -7,4 +7,4 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=v.sanjay@utwente.nl
 
-srun --mpi=pmi2 JumpingBubbles_Snellius
+srun --mpi=pmi2 JumpingBubbles
