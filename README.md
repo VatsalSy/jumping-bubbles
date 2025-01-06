@@ -1,5 +1,15 @@
 # Jumping Bubbles
 
+[![DOI](https://zenodo.org/badge/744202007.svg)](https://doi.org/10.5281/zenodo.14602622)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
+[![OpenMP](https://img.shields.io/badge/OpenMP-enabled-brightgreen.svg)](https://www.openmp.org/)
+[![MPI](https://img.shields.io/badge/MPI-enabled-brightgreen.svg)](https://www.open-mpi.org/)
+[![GitHub issues](https://img.shields.io/github/issues/VatsalSy/jumping-bubbles)](https://github.com/VatsalSy/jumping-bubbles/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/VatsalSy/jumping-bubbles)](https://github.com/VatsalSy/jumping-bubbles/pulls)
+[![GitHub release](https://img.shields.io/github/v/release/VatsalSy/jumping-bubbles)](https://github.com/VatsalSy/jumping-bubbles/releases)
+[![Documentation Status](https://img.shields.io/badge/docs-latest-brightgreen.svg)](http://basilisk.fr/sandbox/README)
+
 A high-performance computational framework for studying bubble coalescence and jumping phenomena on substrates using [Basilisk C](http://basilisk.fr/). This repository provides a complete suite of simulation tools, post-processing utilities, and validated test cases for investigating two-phase free-surface flows with adaptive mesh refinement.
 
 ## Key Features
@@ -65,7 +75,7 @@ A high-performance computational framework for studying bubble coalescence and j
 ### Setting up Basilisk
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/jumping-bubbles.git
+   git clone https://github.com/VatsalSy/jumping-bubbles.git
    cd jumping-bubbles
    ```
 
@@ -129,12 +139,31 @@ export OMP_NUM_THREADS=4
 - Various slice extraction tools available in `postProcess/`
 
 ## Contributing
+
+We welcome contributions to improve Jumping Bubbles! Here's how you can help:
+
+### Reporting Issues
+Click on the "Issues" tab above or use these quick links:
+- [Report a Bug](https://github.com/VatsalSy/jumping-bubbles/issues/new?template=bug_report.md&labels=bug)
+- [Request a Feature](https://github.com/VatsalSy/jumping-bubbles/issues/new?template=feature_request.md&labels=enhancement)
+- [Ask a Question](https://github.com/VatsalSy/jumping-bubbles/issues/new?template=question.md&labels=question)
+- [Open a Blank Issue](https://github.com/VatsalSy/jumping-bubbles/issues/new)
+
+### Making Changes
 1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request with:
-   - Clear description of changes
-   - Updated test cases if applicable
-   - Modified documentation as needed
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Make your changes
+4. Run tests and ensure they pass
+5. Update documentation if needed
+6. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+7. Push to the branch (`git push origin feature/AmazingFeature`)
+8. Open a Pull Request
+
+Please ensure your PR:
+- Clearly describes the changes
+- Includes any relevant tests
+- Updates documentation as needed
+- References any related issues
 
 ## License
 
@@ -143,6 +172,15 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 ## Citation
 If you use this code in your research, please cite:
 ```bibtex
+@software{jumping_bubbles_2024,
+  author       = {Sanjay, V. and Yang, R.},
+  title        = {Jumping Bubbles: A Computational Framework for Studying Bubble Coalescence},
+  year         = {2024},
+  publisher    = {Zenodo},
+  version      = {v1.0},
+  doi          = {10.5281/zenodo.14602622},
+  url          = {https://doi.org/10.5281/zenodo.14602622}
+}
 ```
 
 ## Acknowledgments

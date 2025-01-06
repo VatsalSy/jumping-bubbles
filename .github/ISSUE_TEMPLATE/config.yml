@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Basilisk Forum
+    url: http://basilisk.fr/sandbox/README
+    about: For questions specific to Basilisk C implementation
